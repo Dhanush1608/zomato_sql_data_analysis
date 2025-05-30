@@ -1,1 +1,1 @@
-# Zomato SQL Data Analysis Project
+# SQL Project: Data Analysis for Zomato - A Food Delivery Company
