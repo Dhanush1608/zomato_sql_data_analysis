@@ -2,8 +2,6 @@
 
 # 🍽️ Zomato SQL Case Study - Data Analysis Project
 
-Welcome to the **Zomato Data Analysis Project**! This project is designed to showcase end-to-end **SQL skills** by analyzing a food delivery service’s data. We'll explore customer behavior, restaurant performance, and business metrics using SQL.
-
 ---
 
 ##  Project Overview
