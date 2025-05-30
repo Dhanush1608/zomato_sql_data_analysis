@@ -39,8 +39,8 @@ The following tables were created:
 - `deliveries`: Delivery logistics  
 - `riders`: Contains riders info
 
-> 🗂️ **Entity-Relationship Diagram (ERD)**  
-> *(Optional: Insert ERD image here using markdown if you have it)*
+> **Entity-Relationship Diagram (ERD)**  
+> ![ERD](https://github.com/Dhanush1608/zomato_sql_data_analysis/blob/main/ERD_diagram.png)
 
 ---
 
