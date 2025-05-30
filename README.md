@@ -18,12 +18,21 @@ This case study simulates real-world business scenarios faced by **Zomato**, one
 
 ---
 
+##  Project Structure
+
+- **Database Setup**: Creation of the `zomato_db` database and the required tables.  
+- **Data Import**: Inserting sample data into the tables.  
+- **Data Cleaning**: Handling null values and ensuring data integrity.  
+- **Business Problems**: Solving 20 specific business problems using SQL queries.
+
+---
+
 ## 🛠 Tech Stack
 
 | Tool        | Usage                         |
 |-------------|-------------------------------|
 | PostgreSQL  | SQL database and queries      |
-| DB Browser  | GUI for interacting with DB   |
+| pgAdmin 4   | GUI for interacting with DB   |
 | Excel       | Data creation and formatting  |
 | GitHub      | Version control & showcase    |
 
