@@ -1,1 +1,93 @@
 # SQL Project: Data Analysis for Zomato - A Food Delivery Company
+
+# 🍽️ Zomato SQL Case Study - Data Analysis Project
+
+Welcome to the **Zomato Data Analysis Project**! This project is designed to showcase end-to-end **SQL skills** by analyzing a food delivery service’s data. We'll explore customer behavior, restaurant performance, and business metrics using SQL.
+
+---
+
+##  Project Overview
+
+This case study simulates real-world business scenarios faced by **Zomato**, one of India’s largest food delivery platforms. It involves:
+
+- Setting up a relational database
+- Importing and cleaning data
+- Answering complex business questions using **advanced SQL**
+
+>  Note: All data is **synthetic** and generated for educational purposes.
+
+---
+
+## 🛠 Tech Stack
+
+| Tool        | Usage                         |
+|-------------|-------------------------------|
+| PostgreSQL  | SQL database and queries      |
+| DB Browser  | GUI for interacting with DB   |
+| Excel       | Data creation and formatting  |
+| GitHub      | Version control & showcase    |
+
+---
+
+##  Database Schema
+
+The following tables were created:
+
+- `customers`: Contains customer info  
+- `restaurants`: List of restaurant partners  
+- `orders`: Order details  
+- `deliveries`: Delivery logistics  
+- `riders`: Contains riders info
+
+> 🗂️ **Entity-Relationship Diagram (ERD)**  
+> *(Optional: Insert ERD image here using markdown if you have it)*
+
+---
+
+##  Business Questions Answered
+
+We solved 20+ real-world business problems using SQL, including:
+
+1. What are the most frequently ordered dishes by a specific customer?
+2. Identify peak order hours (in 2-hour windows).
+3. Classify customers into **Gold** or **Silver** segments based on total spend.
+4. Calculate **Customer Lifetime Value (CLV)**.
+5. Track month-over-month revenue trends.
+6. Which items spike during certain seasons?
+7. Compute restaurant growth ratio since launch.
+
+---
+
+## 💻 Sample SQL Queries
+
+```sql
+-- 🏆 Customer Lifetime Value
+SELECT customer_id, SUM(total_amount) AS clv
+FROM orders
+GROUP BY customer_id;
+
+-- 🥇 Segment customers into Gold or Silver
+SELECT customer_id,
+  CASE 
+    WHEN SUM(total_amount) > (SELECT AVG(total_amount) FROM orders)
+    THEN 'Gold'
+    ELSE 'Silver'
+  END AS customer_segment
+FROM orders
+GROUP BY customer_id;
+```
+---
+
+##  Conclusion
+
+This project highlights my ability to handle complex SQL queries and provides solutions to real-world business problems in the context of a food delivery service like Zomato. The approach taken here demonstrates a structured problem-solving methodology, data manipulation skills, and the ability to derive actionable insights from data.
+
+---
+
+##  Notice
+
+All customer names and data used in this project are computer-generated using AI and random functions.  
+They do not represent real data associated with Zomato or any other entity.  
+This project is solely for learning and educational purposes, and any resemblance to actual persons, businesses, or events is purely coincidental.
+
+---
